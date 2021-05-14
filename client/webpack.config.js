@@ -79,6 +79,12 @@ const config = {
       path: false,
     },
   },
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
 };
 
 module.exports = config;
